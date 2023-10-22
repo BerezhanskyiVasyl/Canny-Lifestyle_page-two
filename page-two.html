@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canny</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script src="js/tabs.js" defer></script>
+    <script src="js/script-page.js" defer></script>
+  </head>
+  <body class="font-montserrat">
+    <div class="wrapper relative background-mix-blade">
+      <div class="background-top-orange background-top-orange__layer1"></div>
+      <div class="background-top-orange background-top-orange__layer2"></div>
+      <header class="absolute z-10 w-full top-0 left-0">
+        <a href="#">
+          <img class="w-36 max-sm:w-20 absolute top-11 left-1/2 -translate-x-1/2" src="img/Logo_purple.png" alt="" />
+        </a>
+        <div class="container-canny flex items-center py-12 justify-between">
+          <ul class="flex items-center justify-evenly grow">
+            <li class="text-mintDark text-lg font-medium max-sm:text-xs"><a href="#">Home</a></li>
+            <li class="text-mintDark text-lg font-medium max-sm:text-xs"><a href="#">About</a></li>
+          </ul>
+          <div class="w-96 max-lg:w-48 max-sm:w-20"></div>
+          <ul class="flex items-center justify-evenly grow max-sm:text-xs">
+            <li class="text-mintDark text-lg font-medium max-sm:text-xs"><a href="#">Blog</a></li>
+            <li class="text-mintDark text-lg font-medium max-sm:text-xs"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="relative z-10">
+        <section class="pt-64 max-xl:pt-52 max-sm:pb-16 pb-7">
+          <div class="container-canny grid grid-section text-purpleDark mb-20 max-md:mb-6">
+            <div class="px-4 slider">
+              <div class="relative grid justify-center justify-items-center">
+                <div
+                  class="swiper swiper-canny max-w-[466px] max-xl:max-w-[400px] max-md-big:max-w-[300px] max-md:max-w-[466px] max-[569px]:max-w-[400px] max-[460px]:max-w-[300px]"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide flex justify-center max-w-[466px] rounded-3xl overflow-hidden">
+                      <img class="w-full h-full object-cover" src="img/slider-yellow/page2_yellow1.webp" alt="" />
+                    </div>
+                    <div class="swiper-slide flex justify-center max-w-[466px] rounded-3xl overflow-hidden">
+                      <img class="w-full h-full object-cover" src="img/slider-yellow/page2_yellow2.webp" alt="" />
+                    </div>
+                    <div class="swiper-slide flex justify-center max-w-[466px] rounded-3xl overflow-hidden">
+                      <img class="w-full h-full object-cover" src="img/slider-yellow/page2_yellow3.webp" alt="" />
+                    </div>
+                    <div class="swiper-slide flex justify-center max-w-[466px] rounded-3xl overflow-hidden">
+                      <img class="w-full h-full object-cover" src="img/slider-yellow/page2_yellow4.webp" alt="" />
+                    </div>
+                    <div class="swiper-slide flex justify-center max-w-[466px] rounded-3xl overflow-hidden">
+                      <img class="w-full h-full object-cover" src="img/slider-yellow/page2_yellow5.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="absolute z-20 left-0 top-1/2 -translate-y-1/2 w-full flex items-center gap-20 justify-between max-xxl:justify-center max-xxl:top-3/4 max-xxl:translate-y-[350%] max-xl:translate-y-[250%] max-md-big:translate-y-[200%] max-md:translate-y-[350%] max-[569px]:translate-y-[280%] max-[569px]:gap-10 max-[460px]:translate-y-[200%]"
+                >
+                  <button class="cursor-pointer sw-btn-canny-prev">
+                    <img src="img/row-left-slide.svg" alt="" />
+                  </button>
+                  <button class="cursor-pointer sw-btn-canny-next">
+                    <img src="img/row-right-slide.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div
+                class="max-w-[466px] max-xl:max-w-[400px] max-md-big:max-w-[300px] max-md:max-w-[466px] max-[569px]:max-w-[400px] max-[460px]:max-w-[300px] mx-auto px-1 py-7 swiper image-mini-swaper"
+              >
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide cursor-pointer overflow-hidden rounded-md h-[106px] max-md-big:h-16 w-full max-md:h-[106px] max-[460px]:h-16 bg-whiteDark/50 py-2"
+                  >
+                    <img class="w-full h-full object-contain" src="img/slider-yellow/page2_yellow1.webp" alt="" />
+                  </div>
+                  <div
+                    class="swiper-slide cursor-pointer overflow-hidden rounded-md h-[106px] max-md-big:h-16 max-md:h-[106px] max-[460px]:h-16 w-full"
+                  >
+                    <img class="w-full h-full object-cover" src="img/slider-yellow/page2_yellow2.webp" alt="" />
+                  </div>
+                  <div
+                    class="swiper-slide cursor-pointer overflow-hidden rounded-md h-[106px] max-md-big:h-16 max-md:h-[106px] max-[460px]:h-16 w-full"
+                  >
+                    <img class="w-full h-full object-cover" src="img/slider-yellow/page2_yellow3.webp" alt="" />
+                  </div>
+                  <div
+                    class="swiper-slide cursor-pointer overflow-hidden rounded-md h-[106px] max-md-big:h-16 max-md:h-[106px] max-[460px]:h-16 w-full"
+                  >
+                    <img class="w-full h-full object-cover" src="img/slider-yellow/page2_yellow4.webp" alt="" />
+                  </div>
+                  <div
+                    class="swiper-slide cursor-pointer overflow-hidden rounded-md h-[106px] max-md-big:h-16 max-md:h-[106px] max-[460px]:h-16 w-full"
+                  >
+                    <img class="w-full h-full object-cover" src="img/slider-yellow/page2_yellow5.webp" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="button-mix | justify-self-center grid gap-3 w-[466px] max-xl:max-w-[400px] max-md-big:max-w-[300px] max-md:max-w-[466px] max-[569px]:max-w-[400px] max-[460px]:max-w-[300px]"
+            >
+              <div class="flex items-end justify-center">
+                <img class="w-36" src="img/safe_purple.png" alt="" />
+                <img class="w-36 translate-y-1" src="img/wallet_purple.png" alt="" />
+              </div>
+              <button
+                class="bg-purpleDark max-w-[466px] px-14 py-6 text-2xl-2 max-md-big:text-2xl max-md:text-2xl-1 max-sm:text-xl font-bold text-whiteDark rounded-4xl"
+              >
+                Checkout Now
+              </button>
+            </div>
+            <div
+              class="max-md:justify-self-center pt-40 pl-12 max-xl:pt-32 max-md-big:pt-16 max-md:px-5 max-md:py-7 max-xl:pl-7 max-md-big:pl-5 content"
+            >
+              <h1
+                class="text-[44px] max-lg:text-4xl max-sm:text-2xl font-bold leading-tight tracking-wide mb-7 max-lg:mb-5 max-md:text-center"
+              >
+                Canny Hemp & Lemon Balm Capsules
+              </h1>
+              <div class="flex items-center gap-1 mb-5 max-lg:mb-2.5 max-md:justify-center">
+                <p class="text-lg font-medium leading-normal">4.9</p>
+                <span>|</span>
+                <div class="flex items-center gap-0.5 cursor-pointer">
+                  <img class="w-4" src="img/star-fill.svg" alt="" />
+                  <img class="w-4" src="img/star-fill.svg" alt="" />
+                  <img class="w-4" src="img/star-fill.svg" alt="" />
+                  <img class="w-4" src="img/star-fill.svg" alt="" />
+                  <img class="w-4" src="img/star-fill.svg" alt="" />
+                </div>
+                <span>|</span>
+                <img class="w-28 opacity-80" src="img/google.jpg" alt="" />
+              </div>
+              <div>
+                <div
+                  id="tabs"
+                  class="flex items-center justify-between border-b-2 border-b-skin uppercase text-sm max-lg:text-[.625rem] max-md:text-sm max-sm:text-[.5313rem]"
+                >
+                  <span
+                    class="tab | cursor-pointer py-2 max-lg:py-1.5 max-sm:py-1 translate-y-[1.5px] border-b-2 border-b-mintDark font-bold"
+                    data-tab="description"
+                    >Description</span
+                  >
+                  <span
+                    class="tab | cursor-pointer py-2 max-lg:py-1.5 max-sm:py-1 translate-y-[1.5px]"
+                    data-tab="ingredients"
+                    >Ingredients</span
+                  >
+                  <span
+                    class="tab | cursor-pointer py-2 max-lg:py-1.5 max-sm:py-1 translate-y-[1.5px]"
+                    data-tab="how-to-use"
+                    >How to Use</span
+                  >
+                  <span
+                    class="tab | cursor-pointer py-2 max-lg:py-1.5 max-sm:py-1 translate-y-[1.5px]"
+                    data-tab="shipping"
+                    >Shipping</span
+                  >
+                </div>
+                <div id="contents">
+                  <div class="content description">
+                    <p class="my-8 max-lg:my-5 max-lg:text-sm max-sm:text-xs">
+                      Discover the impact of our Cold Pressed CBD Oil. We wholeheartedly attest to Cold Pressed as the
+                      ultimate choice. Cold Pressed CBD Oil is extracted without heat, ensuring the preservation of
+                      delicate, raw nutrients including flavonoids and terpenes that might otherwise be compromised by
+                      traditional methods.
+                    </p>
+                    <div class="size text-sm max-lg:text-xs flex items-center gap-5 max-lg:gap-4 max-sm:gap-2.5">
+                      <span>500mg</span>
+                      <span class="text-skin">|</span>
+                      <span>5%</span>
+                      <span class="text-skin">|</span>
+                      <span>10ml</span>
+                    </div>
+                  </div>
+                  <div class="content ingredients" style="display: none">
+                    <p class="my-8 max-lg:my-5 max-lg:text-sm max-sm:text-xs">
+                      Cannabis Sativa L (Hemp), Hemp Seed Oil
+                    </p>
+                    <div class="size text-sm max-lg:text-xs flex items-center gap-5 max-lg:gap-4 max-sm:gap-2.5">
+                      <span>500mg</span>
+                      <span class="text-mint">|</span>
+                      <span>5%</span>
+                      <span class="text-mint">|</span>
+                      <span>10ml</span>
+                    </div>
+                  </div>
+                  <div class="content how-to-use" style="display: none">
+                    <p class="my-8 max-lg:my-5 max-lg:text-sm max-sm:text-xs">
+                      Directions: Squeeze l/4 of a pipette under your tongue and let it sit for I minute. Take up to 4
+                      times daily Dosage: I/4 pipette = 12.5mg CBD DO NOT EXCEED 70mg DAILY
+                    </p>
+                    <div class="size text-sm max-lg:text-xs flex items-center gap-5 max-lg:gap-4 max-sm:gap-2.5">
+                      <span>500mg</span>
+                      <span class="text-mint">|</span>
+                      <span>5%</span>
+                      <span class="text-mint">|</span>
+                      <span>10ml</span>
+                    </div>
+                  </div>
+                  <div class="content shipping" style="display: none">
+                    <p class="my-8 max-lg:my-5 max-sm:my-4 max-lg:text-sm max-sm:text-xs">
+                      £4.99 - Royal Mail Standard. Free Shipping if you Subscribe.
+                    </p>
+                    <div class="size text-sm max-lg:text-xs flex items-center gap-5 max-lg:gap-4 max-sm:gap-2.5">
+                      <span>500mg</span>
+                      <span class="text-mint">|</span>
+                      <span>5%</span>
+                      <span class="text-mint">|</span>
+                      <span>10ml</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="text-skin my-7 max-lg:my-5 max-sm:my-4" />
+              <div class="flex items-center gap-6 max-md:justify-center">
+                <img class="w-[70px] max-lg:w-14" src="img/Orange_LAB.png" alt="" />
+                <img class="w-[70px] max-lg:w-14" src="img/Orange_vegan.png" alt="" />
+                <img class="w-[70px] max-lg:w-14" src="img/Orange_made.png" alt="" />
+                <img class="w-[70px] max-lg:w-14" src="img/Orange_100.png" alt="" />
+              </div>
+              <hr class="text-skin my-7 max-lg:my-5 max-sm:my-4" />
+              <div class="flex flex-col gap-7">
+                <div class="rounded-3xl border py-4 px-6 flex flex-col gap-2.5 max-sm:gap-2">
+                  <div class="flex items-center justify-between">
+                    <div class="input-style_orange">
+                      <input id="buy-1" type="radio" name="price" value="39.99" checked />
+                      <label for="buy-1" class="text-xs max-sm:text-[.5625rem] font-medium">Buy 1</label>
+                    </div>
+                    <div class="flex items-center gap-1">
+                      <span class="text-xl max-xl:text-base max-sm:text-xs font-bold tracking-wide">£ 39.99</span>
+                      <span class="text-[8px] font-medium text-[#989292]">per item</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between pl-7">
+                    <span class="text-xs max-sm:text-[.5625rem] font-medium">Quantity</span>
+                    <div class="flex items-center gap-10 max-xl:gap-8 max-sm:gap-6 border border-whiteDark rounded-3xl">
+                      <button class="cursor-pointer">
+                        <img class="w-[1.1875rem] max-xl:w-[.9375rem] max-sm:w-[.7212rem]" src="img/minus.svg" alt="" />
+                      </button>
+                      <span class="text-base max-xl:text-sm max-sm:text-[.6563rem]">1</span>
+                      <button class="cursor-pointer">
+                        <img class="w-[1.1875rem] max-xl:w-[.9375rem] max-sm:w-[.7212rem]" src="img/plus.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="rounded-3xl border py-4 px-6">
+                  <div class="flex items-center justify-between gap-5">
+                    <div class="input-style_orange flex gap-3">
+                      <input id="buy-2" type="radio" name="price" value="33.99" />
+                      <label for="buy-2" class="text-xs font-medium max-sm:text-[9px]">Buy 3</label>
+                      <div
+                        class="rounded-3xl grow-0 shrink-0 text-xs font-bold tracking-wide bg-skin px-4 py-2 max-xl:px-3 max-xl:text-[.625rem] max-sm:px-2.5 max-sm:py-[.3125rem] max-sm:text-[.4375rem]"
+                      >
+                        Save 15%
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-1 grow-0 shrink-0">
+                      <span class="text-xl grow-0 shrink-0 max-xl:text-base max-sm:text-xs font-bold tracking-wide"
+                        >£ 33.99</span
+                      >
+                      <span class="text-[8px] font-medium text-[#989292]">per item</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rounded-3xl border py-4 px-6">
+                  <div class="flex items-center justify-between gap-5">
+                    <div class="input-style_orange flex gap-3">
+                      <input id="buy-3" type="radio" name="price" value="31.99" />
+                      <label for="buy-3" class="text-xs font-medium max-sm:text-[9px]">Buy 3</label>
+                      <div
+                        class="rounded-3xl grow-0 shrink-0 text-xs font-bold tracking-wide bg-skin px-4 py-2 max-xl:px-3 max-xl:text-[.625rem] max-sm:px-2.5 max-sm:py-[.3125rem] max-sm:text-[.4375rem]"
+                      >
+                        Save 20%
+                      </div>
+                    </div>
+                    <div class="flex items-center grow-0 shrink-0 gap-1">
+                      <span class="text-xl grow-0 shrink-0 max-xl:text-base max-sm:text-xs font-bold tracking-wide"
+                        >£ 31.99</span
+                      >
+                      <span class="text-[8px] font-medium text-[#989292]">per item</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rounded-3xl border py-4 px-6">
+                  <div class="flex items-center justify-between gap-5">
+                    <div class="input-style_orange flex gap-3 items-center">
+                      <input id="buy-4" type="radio" name="price" value="39.99" />
+                      <label for="buy-4" class="text-xs font-medium max-sm:text-[9px]">Monthly Subscription</label>
+                      <div
+                        class="rounded-3xl grow-0 shrink-0 text-xs font-bold tracking-wide bg-skin px-4 py-2 max-xl:px-3 max-xl:text-[.625rem] max-sm:px-2.5 max-sm:py-[.3125rem] max-sm:text-[.4375rem]"
+                      >
+                        Save 25%
+                      </div>
+                    </div>
+                    <div class="flex items-center gap-1 grow-0 shrink-0">
+                      <span class="text-xl grow-0 shrink-0 max-xl:text-base max-sm:text-xs font-bold tracking-wide"
+                        >£ 29.99</span
+                      >
+                      <span class="text-[8px] font-medium text-[#989292]">per item</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-5 py-24 max-md-big:py-16 max-md:py-8 max-sm:pb-0">
+            <h2
+              class="container-canny font-bold text-7xl-1 max-xl:text-5xl max-sm:text-2xl-1 text-center text-purpleDark mb-24 max-md-big:mb-18 max-md:mb-14 max-sm:mb-4"
+            >
+              So Many Amazing Benefits
+            </h2>
+            <div class="swiper swiper-amazing max-w-[1800px] mx-auto">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide cursor-pointer grid-card-imazing items-center gap-8 w-[850px] bg-purpleLight py-6 pl-14 pr-20 max-xl:p-8 max-md-big:grid-flow-row max-xl:gap-5 rounded-3xl"
+                >
+                  <div class="image-imazin !w-[200px] justify-self-center">
+                    <img class="!w-[200px]" src="img/vector_canna.png" alt="" />
+                  </div>
+                  <div class="content-imazin text-whiteDark">
+                    <h4 class="text-2xl font-bold leading-normal mb-3 tracking-wide">The Entourage Effect</h4>
+                    <p class="text-lg font-medium tracking-wide leading-normal">
+                      The presence of a wider variety of Cannabinoids means them working together to achieve maximum
+                      potential benefit.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide cursor-pointer grid-card-imazing items-center gap-8 w-[850px] bg-mint py-6 pl-14 pr-20 max-xl:p-8 max-md-big:grid-flow-row max-xl:gap-5 rounded-3xl"
+                >
+                  <div class="image-imazin !w-[200px] justify-self-center">
+                    <img class="!w-[200px]" src="img/vector_atom.png" alt="" />
+                  </div>
+                  <div class="content-imazin text-mintDark">
+                    <h4 class="text-2xl font-bold leading-normal mb-3 tracking-wide">Terpenes</h4>
+                    <p class="text-lg font-medium tracking-wide leading-normal">
+                      Found in all your favourite plants, these are what give plants their aroma. But more importantly
+                      Terpenes are shown to have great therapeutic effects on the body
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide cursor-pointer grid-card-imazing items-center gap-8 w-[850px] bg-mintBlue py-6 pl-14 pr-20 max-xl:p-8 max-md-big:grid-flow-row max-xl:gap-5 rounded-3xl"
+                >
+                  <div class="image-imazin !w-[200px] justify-self-center">
+                    <img class="!w-[200px]" src="img/vector_flower.png" alt="" />
+                  </div>
+                  <div class="content-imazin text-purpleDark">
+                    <h4 class="text-2xl font-bold leading-normal mb-3 tracking-wide">Flavonoids</h4>
+                    <p class="text-lg font-medium tracking-wide leading-normal max-md-big:text-center">
+                      A delicate nutrient found in all plants, these Flavonoids have great Anti-inflammatory,
+                      antioxidant and antibacterial properties
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="container-canny flex gap-11 mt-4 items-center justify-center relative">
+                  <div class="absolute left-0 top-1/2 -translate-y-1/2 swiper-pagination-amazing"></div>
+                  <button class="sw-btn-amazing-prev cursor-pointer">
+                    <img src="img/row-left-slide-2.svg" alt="" />
+                  </button>
+                  <button class="sw-btn-amazing-next cursor-pointer">
+                    <img src="img/row-right-slide-2.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="background-footer">
+          <div class="container-canny pt-20 max-md:pt-10 text-purpleDark pb-[1150px] max-md-big:pb-[1500px] relative">
+            <div class="max-w-[660px] ml-auto grid mr-[12%] max-xxl:!mr-auto max-xxl:max-w-[800px]">
+              <div
+                class="flex items-center max-xxl:grid max-xxl:py-44 max-md:py-20 max-xxl:w-1/2 max-md:w-full max-xxl:justify-self-end max-md:grid-cols-2 max-md:justify-items-center"
+              >
+                <img
+                  class="absolute bottom-[1000px] left-[-250px] max-[1638px]:left-[-180px] max-[1500px]:left-[-110px] max-[1350px]:left-[-80px] max-xxl:h-[500px] max-xxl:bottom-[1800px] max-xxl:left-0 max-md-big:bottom-[2150px] max-md:bottom-[2150px] max-md:!h-[180px] max-md:relative max-md:top-0 max-md:left-0"
+                  src="img/Hand_Canny.svg"
+                  alt=""
+                />
+                <h2
+                  class="text-7xl-1 max-xxl:w-full max-md:text-5xl max-sm:text-4xl font-bold leading-tight mb-4 flex justify-center max-md:"
+                >
+                  <span class="gradient-text inline-block">Anxiety Busting</span>
+                </h2>
+              </div>
+              <p class="text-xl text-center font-medium mb-8 max-xl:text-base max-sm:text-xs">
+                We have some of the finest CBD-based products in the UK. Our customers know this. We also make a great
+                cup of coffee! So why not pop in and say hello and see what the hype is all about.
+              </p>
+              <div class=""><img class="" src="img/map.png" alt="" /></div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="absolute w-full z-10 bottom-0 left-0">
+        <div class="container-canny pt-11 pb-4">
+          <div
+            class="mb-24 grid grid-flow-col max-xxl:justify-items-start max-xxl:items-center max-xxl:grid-flow-row max-xxl:grid-cols-2 max-md-big:grid-cols-1 max-md-big:justify-items-center gap-x-12 max-w-[1090px] mx-auto"
+          >
+            <div class="max-md-big:hidden">
+              <img class="min-w-[200px]" src="img/Logo_Green.png" alt="" />
+            </div>
+            <div class="max-md-big:row-start-2 max-md-big:grid max-md-big:justify-items-center max-md-big:mb-9">
+              <h4 class="text-mintDark text-2xl-1 font-bold max-sm:text-lg max-sm:font-semibold mb-4">Contact</h4>
+              <div class="flex flex-col max-md-big:items-center gap-2.5 text-xs max-sm:text-xs-1_5 text-black">
+                <a class="flex gap-2 items-start max-md-big:items-center" href="#">
+                  <img src="img/footer/tel.svg" alt="" />
+                  <span>+44 1424 834703</span>
+                </a>
+                <a class="flex gap-2 items-start max-md-big:items-center" href="#">
+                  <img src="img/footer/mail.svg" alt="" />
+                  <span>jonnycannylifestyle@gmail.com</span>
+                </a>
+                <a class="flex gap-2 items-start max-md-big:items-center" href="#">
+                  <img src="img/footer/place.svg" alt="" />
+                  <span
+                    >9 Kings Rd, Saint Leonards-on-Sea <br />
+                    TN37 6EA, United Kingdom</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div
+              class="max-xxl:justify-self-center max-md-big:row-start-1 max-md-big:grid max-md-big:justify-items-center max-md-big:mb-10"
+            >
+              <h4 class="text-mintDark text-2xl-1 font-bold max-sm:text-lg max-sm:font-semibold mb-4">Pages</h4>
+              <ul class="flex flex-col gap-2.5 text-xs max-sm:text-xs-1_5 text-black">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="max-md-big:row-start-3 max-md-big:grid max-md-big:justify-items-center">
+              <h4
+                class="text-mintDark text-2xl-1 max-sm:text-lg max-sm:font-semibold font-bold mb-4 max-md-big:text-center"
+              >
+                Subscribe to get 20% OFF
+              </h4>
+              <p class="mb-3 text-xs text-black">
+                Subscribe to our email newsletter for weekly <br />
+                anxiety busting help and the best discounts.
+              </p>
+              <form class="flex items-center max-md-big:grid max-md-big:items-stretch max-md-big:gap-y-3">
+                <label class="hidden" for="email"></label>
+                <input
+                  class="py-3 px-4 input-footer max-md-big:justify-self-stretch rounded-md max-md-big:w-full"
+                  id="email"
+                  type="text"
+                  placeholder="Type your email"
+                />
+                <button
+                  class="-translate-x-3 max-md-big:translate-x-0 max-md-big:justify-self-center py-1 px-3 rounded-md text-2xl-1 font-bold bg-mintDark text-whiteDark"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          <hr class="my-12 text-mintlight max-md-big:hidden" />
+          <div class="grid grid-footer mx-auto max-md-big:mb-[460px]">
+            <h4 class="title-footer gradient-text text-3xl font-bold mb-1 max-md-big:mb-6">Anxiety Busting</h4>
+            <a
+              class="instagram max-sm:text-xs-0_8 flex items-center gap-2.5 justify-center max-md-big:mb-6 max-sm:flex-col"
+              href="#"
+            >
+              <p class="text-2xl-1 max-sm:text-xs font-bold text-mintDark">Socials</p>
+              <img src="img/footer/insta.svg" alt="" />
+            </a>
+            <div class="brend max-md-big:flex max-md-big:gap-x-5">
+              <img class="w-36 mb-1" src="img/footer/safe_green.png" alt="" />
+              <img class="w-36" src="img/footer/wallet_green.png" alt="" />
+            </div>
+          </div>
+          <div class="flex justify-between mt-12 mb-80 text-mintlight max-md-big:hidden">
+            <hr class="w-2/6" />
+            <hr class="w-2/6" />
+          </div>
+          <img class="w-44 block mx-auto mb-16" src="img/footer/text_bottom1.png" alt="" />
+          <p class="text-xs gradient-copyright text-center">Copyright Cannylifestyle.com | All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

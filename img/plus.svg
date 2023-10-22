@@ -1,0 +1,21 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 5600">
+<g id="Rectangle 282" filter="url(#filter0_i_355_1273)">
+<rect x="0.234619" y="0.206055" width="18.9398" height="18.9398" rx="9.46988" fill="#ECE4E2"/>
+</g>
+<line id="Line 30" x1="13.3872" y1="10.2021" x2="6.02175" y2="10.2021" stroke="#5E685D" stroke-width="1.05221"/>
+<line id="Line 31" x1="9.70461" y1="13.8848" x2="9.70461" y2="6.51931" stroke="#5E685D" stroke-width="1.05221"/>
+</g>
+<defs>
+<filter id="filter0_i_355_1273" x="0.234619" y="0.206055" width="20.518" height="21.0441" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="1.57831" dy="2.10442"/>
+<feGaussianBlur stdDeviation="1.05221"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_355_1273"/>
+</filter>
+</defs>
+</svg>
